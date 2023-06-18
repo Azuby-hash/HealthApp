@@ -1,0 +1,74 @@
+.stackA {
+    position: relative;
+    display: flex;
+    height: 312px;
+    width: 100vw;
+
+    .photo {
+        height: 312px;
+        width: 540px;
+    }
+
+    .progress {
+        position: absolute;
+
+    }
+
+    .chart {
+        background-color: #2E2E2E;
+        height: 312px;
+        width: 100%;
+    }
+}
+
+.stackB {
+    display: flex;
+    margin-top: 24px;
+    height: 136px;
+    width: 100%;
+    justify-content: center;
+
+    > .item {
+        width: 136px;
+        height: 136px;
+        cursor: pointer;
+    }
+    .item + .item {
+        margin-left: 64px;
+    }
+}
+
+.stackC {
+    width: 960px;
+    height: 476px;
+    margin: auto;
+    margin-top: 24px;
+
+    .img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.stackD {
+    margin-top: 28px;
+    margin-bottom: 64px;
+
+    .button {
+        width: 296px;
+        height: 56px;
+        cursor: pointer;
+        user-select: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        border-radius: 10px;
+        background: linear-gradient(32.95deg, #FFCC21 8.75%, #FF963C 86.64%);
+
+        .label {
+            color: white;
+            font-size: 18px;
+        }
+    }
+}

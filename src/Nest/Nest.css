@@ -1,0 +1,57 @@
+.top_bar {
+    width: 100vw;
+    height: 64px;
+    background-color: #414141;
+    position: relative;
+
+    > .icon {
+        position: absolute;
+        left: 160px;
+        width: 144px;
+        height: 64px;
+    }
+
+    > .menu {
+        position: absolute;
+        right: 160px;
+        width: 32px;
+        height: 32px;
+        top: 16px;
+        cursor: pointer;
+    }
+
+    > .button {
+        position: absolute;
+        display: flex;
+        width: 480px;
+        height: 32px;
+        top: 16px;
+        right: 208px;
+        cursor: pointer;
+        user-select: none;
+
+        > .item {
+            width: 160px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            > .icon { 
+                width: 32px;
+                height: 32px;
+                margin-right: 10px;
+            }
+
+            > .label {
+                font-size: 16px;
+                color: white;
+            }
+        }
+    }
+}
+
+.bottom_bar {
+    height: 128px;
+    width: 100vw;
+    background-color: #414141;
+}
