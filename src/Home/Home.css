@@ -1,4 +1,4 @@
-.stackA {
+.home_stackA {
     position: relative;
     display: flex;
     height: 312px;
@@ -21,7 +21,7 @@
     }
 }
 
-.stackB {
+.home_stackB {
     display: flex;
     margin-top: 24px;
     height: 136px;
@@ -38,7 +38,7 @@
     }
 }
 
-.stackC {
+.home_stackC {
     width: 960px;
     height: 476px;
     margin: auto;
@@ -50,7 +50,7 @@
     }
 }
 
-.stackD {
+.home_stackD {
     margin-top: 28px;
     margin-bottom: 64px;
 
@@ -63,12 +63,14 @@
         justify-content: center;
         align-items: center;
         margin: auto;
+        text-decoration: none;
         border-radius: 10px;
         background: linear-gradient(32.95deg, #FFCC21 8.75%, #FF963C 86.64%);
 
         .label {
             color: white;
             font-size: 18px;
+            text-decoration: none;
         }
     }
 }
