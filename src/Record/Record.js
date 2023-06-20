@@ -150,7 +150,7 @@ export default function Record() {
                 </div>
             </div>
             <div className="record_stackE">
-                <Link to="/record" className="button">
+                <Link to="/column" className="button">
                     <div className="label">Button</div>
                 </Link>
             </div>
