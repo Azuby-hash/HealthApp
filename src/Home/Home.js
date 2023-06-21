@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
     const chartRef = useRef(null)
+    const progressRef = useRef(null)
 
     useEffect(() => {
         chartRef.current.width = window.innerWidth / 1
@@ -73,11 +74,26 @@ export default function Home() {
 
     }, [chartRef]);
 
+    useEffect(() => {
+        progressRef.current.width = window.innerHeight * 1.75
+        progressRef.current.height = window.innerHeight
+
+        const ctx = progressRef.current.getContext("2d")
+
+        ctx.arc(ctx.canvas.width / 2, ctx.canvas.height / 2, ctx.canvas.height / 4, -0.5 * Math.PI, 1 * Math.PI, false);    
+        ctx.lineWidth = 6;
+        ctx.strokeStyle = "#FFFFFF";
+        
+        ctx.stroke();
+
+    }, [progressRef]);
+
     return(
         <>
             <div className="home_stackA">
                 <img src="main_photo.png" alt="" className="photo"/>
-                <div className="progress"></div>
+                <canvas className="progress" ref={progressRef}></canvas>
+                <div className="text">75%</div>
                 <canvas className="chart" ref={chartRef}></canvas>
             </div>
             <div className="home_stackB">

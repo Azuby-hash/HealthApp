@@ -11,7 +11,19 @@
 
     .progress {
         position: absolute;
+        height: 312px;
+        width: 540px;
+        top: 0;
+        left: 0;
+    }
 
+    .text {
+        position: absolute;
+        left: 245px;
+        top: calc(50% - 15px);
+        font-size: 25px;
+        font-weight: 500;
+        color: white;
     }
 
     .chart {
